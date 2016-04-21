@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".25">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/animeImageView"
+            android:layout_weight="0.5"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Anime"
+            android:id="@+id/animeTextview"
+            android:layout_weight="0.5"
+            android:textAlignment="center"
+            android:height="100dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="40dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Description is Placed here."
+        android:id="@+id/descriptonTextView"
+        android:padding="20dp"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:layout_weight=".25" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:id="@+id/characterListView"
+        android:layout_weight=".5" />
+</LinearLayout>
